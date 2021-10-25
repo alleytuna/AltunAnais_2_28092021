@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
@@ -39,6 +40,36 @@
     color: #0065FC;
     padding: 20px 10px;
     border-bottom: 4px solid #0065FC ;
+}
+
+h1 {
+    font-size: 20px;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.search-field {
+    height: 50px;
+    border-radius: 15px;
+    padding: 10px 50px 10px 50px;
+    font-size: 18px;
+    border-color: #F2F2F2;
+}
+
+.search-button {
+    background: #0065FC;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
 @media screen and (min-width: 768px) {
