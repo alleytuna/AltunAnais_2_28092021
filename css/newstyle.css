@@ -7,17 +7,13 @@
 
 .navbar {
     background-color: white;
-    display: block;
+    display: flex;
     justify-content: space-between;
-    width: 100%;
-    text-align: center;
     font-size: 16px;
 }
 
 .nav-logo {
     height: 43px;
-    position: relative;
-    text-align: center;
 }
 
 .nav-list {
@@ -26,8 +22,8 @@
 
 .nav-list .list-item {
     display: inline-block;
-    width: 49%;
-    border-bottom: 4px solid #F2F2F2;
+    padding: 20px 10px;
+    border-top: 4px solid transparent;
 }
 
 .navbar a {
@@ -38,34 +34,31 @@
 .navbar a:hover {
     color: #0065FC;
     padding: 20px 10px;
-    border-bottom: 4px solid #0065FC ;
+    border-top: 4px solid #0065FC ;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .navbar {
-        display: flex;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .nav-logo {
-        top: 0px
-    }
-
-    .nav-list {
-
-        list-style-type: none;
+        position: relative;
+        top: 10px;
     }
 
     .nav-list .list-item {
-        padding: 20px 10px;
-        border-top: 4px solid #F2F2F2;
-        border-bottom: none;
+        display: inline-block;
+        width: 49%;
+        border-bottom: 4px solid #F2F2F2;
     }
 
     .navbar a:hover {
         color: #0065FC;
         padding: 20px 10px;
-        border-top: 4px solid #0065FC;
-        border-bottom: none;
+        border-bottom: 4px solid #0065FC ;
     }
 
 }
