@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <title>Booki</title>
     </head>
 
@@ -27,15 +27,24 @@
                     </ul>
                 </nav><br>
             </header>
-            <div>
+            <section class="searchbar">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2>En plein centre ville ou en pleine nature</h2><br>
-            </div>
-            <div class="search-box">
-                <input type="search" name="location" class="search-field" placeholder="Marseilles, France">
-                <button type="submit" class="material-icons">search</button>
-            </input>
-            </div>
+                <form class="search-box" method="get" action="index.html">
+                    <i class="bi bi-geo-alt-fill" style="font-size: 120%;"></i>
+                    <input type="search" name="location" class="search-field" placeholder="Marseilles, France"></input>
+                    <button type="submit" class="bi bi-search" style="font-size: 120%"></button>
+                    <button type="submit" class="desktop-search">Rechercher</button>
+                </form>
+            </section>
+            <br>
+            <section class="filters">
+                <h1>Filtres</h1>
+                <button type="button" class="filters-button"><i class="bi bi-cash"></i>Economique</button>
+                <button type="button" class="filters-button"><i class="bi bi-people-fill"></i>Familial</button>
+                <button type="button" class="filters-button"><i class="bi bi-heart-fill"></i>Romantique</button>
+                <button type="button" class="filters-button"><i class="bi bi-cash"></i>Animaux autorisés</button>
+            </section>
     </body>
 
 </html>
