@@ -19,6 +19,7 @@
     height: 43px;
     position: relative;
     text-align: center;
+    margin: 15px;
 }
 
 .nav-list {
@@ -42,14 +43,20 @@
     border-bottom: 4px solid #0065FC ;
 }
 
-h1 {
-    font-size: 20px;
-    padding: 15px;
+.searchbar {
+    margin-left: 15px;
 }
 
-h2 {
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.searchbar h2 {
     font-size: 16px;
-    padding: 15px;
+    font-weight: lighter;
+    margin-bottom: 10px;
 }
 
 .search-box {
@@ -65,7 +72,7 @@ h2 {
     padding: 0px;
 }
 
-.search-box .bi-geo-alt-fill {
+.search-box .fa-map-marker {
     background: #F2F2F2;
     height: 100%;
     width: 50px;
@@ -83,7 +90,7 @@ h2 {
     padding-left: 4%;
 }
 
-.bi-search {
+.fa-search {
     background: #0065FC;
     color: white;
     width: 55px;
@@ -97,9 +104,23 @@ h2 {
 }
 
 .filters {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.filters h2 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.all-filters {
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .filters-button {
@@ -113,9 +134,11 @@ h2 {
     margin-left: 10px;
     padding-right: 20px;
     margin: 5px;
+    font-size: 14px;
+    font-weight: bolder;
 }
 
-.filters .bi {
+.filters .fa {
     display: flex;
     margin-right: 10px;
     background: #deebff;
@@ -128,23 +151,70 @@ h2 {
     justify-content: center;
 }
 
+.info {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.info .fa-info {
+    color: #0065FC;
+    margin-right: 10px;
+    font-size: 14px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    padding: 5px 10px 5px;
+}
+
+.info .info-text {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.most-popular {
+    background-color: #F2F2F2;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.most-popular h1 {
+    padding: 30px 0 10px 0;
+}
+
+.popular-accomodations div {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 8%;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.popular-accomodations img {
+    height: 100px;
+}
+
+.popular-accomodations h3 {
+    margin: 15px;
+    font-size: 16px;
+}
+
 @media screen and (min-width: 768px) {
+    .body {
+        margin: 10px;
+    }
+
     .navbar {
         display: flex;
-        
     }
 
     .nav-logo {
-        top: 0px
-    }
-
-    .nav-list {
-
-        list-style-type: none;
+        margin-top: 20px;
     }
 
     .nav-list .list-item {
-        padding: 20px 10px;
+        padding: 30px;
         border-top: 4px solid #F2F2F2;
         border-bottom: none;
     }
@@ -153,6 +223,11 @@ h2 {
         color: #0065FC;
         border-top: 4px solid #0065FC;
         border-bottom: none;
+    }
+
+    .searchbar {
+        margin: 15px;
+        margin-bottom: 0px;
     }
 
     .search-box {
@@ -164,11 +239,11 @@ h2 {
         width: 55%;
     }
 
-    .search-box .bi-geo-alt-fill{
+    .search-box .fa-map-marker {
         border-radius: 18px 0 0 18px;
     }
 
-    .bi-search {
+    .search-box .fa-search {
         display: none;
     }
 
@@ -181,6 +256,13 @@ h2 {
         border: 4px solid #0065FC;
         width: 30%;
         border-radius: 0px 18px 18px 0;
+    }
+
+    .filters {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 5px;
     }
 
 }
