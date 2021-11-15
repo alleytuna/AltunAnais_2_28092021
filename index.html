@@ -1,3 +1,8 @@
+<!-- TODO 
+    - ajout hover font en bleu 
+    - alt sur toutes les images
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -27,7 +32,7 @@
                     </ul>
                 </nav><br>
             </header>
-            <section class="searchbar">
+            <div class="searchbar">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h2>En plein centre ville ou en pleine nature</h2><br>
                 <form class="search-box" method="get" action="index.html">
@@ -36,9 +41,9 @@
                     <button type="submit" class="fa fa-search" style="font-size: 120%"></button>
                     <button type="submit" class="desktop-search">Rechercher</button>
                 </form>
-            </section>
+            </div>
             <br>
-            <section class="filters">
+            <div class="filters">
                 <h2>Filtres</h2>
                 <div class="all-filters">
                     <button type="button" class="filters-button"><i class="fa fa-money"></i>Economique</button>
@@ -46,22 +51,36 @@
                     <button type="button" class="filters-button"><i class="fa fa-heart"></i>Romantique</button>
                     <button type="button" class="filters-button"><i class="fa fa-smile-o"></i>Animaux autorisés</button>
                 </div>
-            </section><br>
-            <section class="info">
+            </div>
+            <div class="info">
                 <i class="fa fa-info"></i>
                 <h3 class="info-text">Plus de 500 logements sont disponibles dans cette ville</h3>
-            </section><br>
-            <section class="most-popular">
-                <h1>Les plus populaires</h1>
-                <div class="popular-accomodations">
-                    <div class="first-popular">
-                        <img src="/src/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                        <h3>Hôtel Le Soleil du matin</h3>
+            </div>
+            <section class="accomodations-and-popular">
+                <div class="most-popular">
+                    <span class="most-popular-title">
+                        <h1>Les plus populaires</h1>
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </span>
+                    <div class="popular-accomodations">
+                        <article class="first-popular">
+                            <img src="/src/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <span class="popular-texts">
+                                <h3>Hôtel Le Soleil du matin</h3>
+                                <h4>Nuit à partir de 128€</h4>
+                                <span class="star-rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                            </span>
+                        </article>
+                        <div class="second-popular">Au coeur de l'eau Chambres d'hôtes</div>
+                        <div class="third-popular">Hôtel Tout bleu et Blanc</div>
                     </div>
-                    <div class="second-popular">Au coeur de l'eau Chambres d'hôtes</div>
-                    <div class="third-popular">Hôtel Tout bleu et Blanc</div>
                 </div>
-
             </section>
     </body>
 
