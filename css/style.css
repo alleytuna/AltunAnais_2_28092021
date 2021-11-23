@@ -494,15 +494,16 @@ h1 {
     .activities-marseille {
         display: flex;
         flex-wrap: wrap;
-        width: max-content;
+        flex-direction: column;
         height: 400px;
     }
 
     .activities-marseille article {
         display: flex;
-        max-width: 200px;
+        width: 22%;
         height: auto;
         max-height: 400px;
+        margin-right: 20px;
     }
 
     .activities-marseille img {
@@ -510,10 +511,32 @@ h1 {
     }
 
     .activities-marseille .second-activity {
-        height: 50%;
+        height: 55%;
     }
 
     .activities-marseille .third-activity {
         height: 40%;
+        margin-top: auto;
+        margin-bottom: 0px
+    }
+
+    .activities-marseille .fifth-activity {
+        height: 47%;
+    }
+
+    .activities-marseille .sixth-activity {
+        height: 47%;
+        margin-top: auto;
+        margin-bottom: 0px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer div {
+        margin-left: 50px;
+        width: 32%;
     }
 }
