@@ -6,6 +6,8 @@
     margin: 0;
 }
 
+/* NAVBAR */
+
 .navbar {
     background-color: white;
     display: block;
@@ -42,6 +44,8 @@
     color: #0065FC;
     border-bottom: 4px solid #0065FC ;
 }
+
+/* SEARCHBAR */
 
 .searchbar {
     margin-left: 15px;
@@ -105,6 +109,8 @@ h1 {
     display: none;
 }
 
+/* FILTERS */
+
 .filters {
     display: flex;
     flex-wrap: wrap;
@@ -153,8 +159,10 @@ h1 {
     justify-content: center;
 }
 
+/* INFO SECTION */
+
 .info {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     margin: 15px;
 }
@@ -173,27 +181,40 @@ h1 {
     font-weight: lighter;
 }
 
+/* CARDS */
+
+.accommodations-and-popular {
+    display: flex;
+    flex-direction: column;
+}
+
 .most-popular {
     background-color: #F2F2F2;
     margin-top: 15px;
     padding-left: 20px;
     padding-bottom: 20px;
-    width: auto;
-    max-width: 375px;
+    max-width: 450px;
 }
 
 .most-popular-title {
-    display: inline-flex;
-    padding: 35px 0 20px 0;
+    display: flex;
+    padding: 35px 15px 20px 0px;
+    width: 100%;
+}
+
+.most-popular h1 {
+    width: 90%;
 }
 
 .most-popular-title .fa-external-link {
     font-size: 25px;
-    align-items: flex-end;
+    width: 10%;
+    text-align: end;
 }
 
-.popular-accomodations article {
+.popular-accommodations article {
     display: flex;
+    box-shadow: 0px 0px 5px #cfcaca;
     border-radius: 20px;
     background-color: white;
     margin-bottom: 10px;
@@ -201,7 +222,7 @@ h1 {
     height: 150px;
 }
 
-.popular-accomodations img {
+.popular-accommodations img {
     object-fit: cover;
     width: 140px;
     border-right: none;
@@ -212,16 +233,17 @@ h1 {
 .popular-texts {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.popular-accomodations h3 {
+.popular-accommodations h3 {
     font-size: 16px;
     font-weight: bolder;
     padding-top: 20px;
 }
 
-.popular-accomodations h4 {
+.popular-accommodations h4 {
     padding-top: 15px;
     font-size: 14px;
 }
@@ -232,27 +254,141 @@ h1 {
     padding-bottom: 15px;
 }
 
-.star-rating .fa-star {
+.fa-star {
     color: #0065FC;
 }
 
+.grey-star {
+    color: #c9c0c0;
+}
+
+.accommodations {
+    background-color: white;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.accommodations-title {
+    display: inline-flex;
+    padding: 35px 0 20px 0;
+}
+
+.accommodations-marseille article {
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    box-shadow: 0px 0px 5px #cfcaca;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: 230px;
+}
+
+.accommodations-marseille img {
+    object-fit: cover;
+    height: 70%;
+    border-bottom: none;
+    border: 6px solid white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.accommodations-texts {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.accommodations-marseille h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.accommodations-marseille h4 {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.activities {
+    background-color: white;
+    margin-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.activities-title {
+    display: inline-flex;
+    padding: 35px 0 20px 0;
+}
+
+.activities-marseille article {
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    box-shadow: 0px 0px 5px #cfcaca;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: 230px;
+}
+
+.activities-marseille img {
+    object-fit: cover;
+    height: 75%;
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activities-marseille h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 20px
+}
+
+.footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+
+.footer h2 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.footer h3 {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
 @media screen and (min-width: 768px) {
-    .body {
-        margin: 10px;
+
+    body {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .navbar {
         display: flex;
     }
 
-    .nav-logo {
-        margin-top: 20px;
+    .nav-list {
+        display: inline-block;
+        width: 35%;
     }
 
     .nav-list .list-item {
-        padding: 30px;
         border-top: 4px solid #F2F2F2;
         border-bottom: none;
+        padding-top: 25px;
     }
 
     .navbar li:hover {
@@ -301,4 +437,83 @@ h1 {
         margin-bottom: 5px;
     }
 
+    .accommodations-and-popular {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .most-popular {
+        border-radius: 20px;
+        max-height: 660px;
+    }
+
+    .popular-accommodations {
+        width: 340px;
+    }
+
+    .popular-accommodations article {
+        margin-bottom: 30px;
+    }
+
+    .accommodations {
+        order: -1;
+        width: 750px;
+        background-color: #F2F2F2;
+        margin-right: 30px;
+        border-radius: 20px;
+    }
+
+    .accommodations-marseille {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .accommodations-marseille article {
+        display: flex;
+        width: 210px;
+        box-shadow: 0px 0px 5px #cfcaca;
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        height: 230px;
+    }
+    
+    .accommodations-marseille img {
+        object-fit: cover;
+        height: 70%;
+        border-bottom: none;
+        border: 6px solid white;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .accommodations h3 {
+        padding: 15px 0px 15px 0px;
+    }
+
+    .activities-marseille {
+        display: flex;
+        flex-wrap: wrap;
+        width: max-content;
+        height: 400px;
+    }
+
+    .activities-marseille article {
+        display: flex;
+        max-width: 200px;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .activities-marseille img {
+        height: 90%;
+    }
+
+    .activities-marseille .second-activity {
+        height: 50%;
+    }
+
+    .activities-marseille .third-activity {
+        height: 40%;
+    }
 }
