@@ -109,6 +109,7 @@ a {
     height: 110%;
     border-radius: 15px;
     border: 4px solid #0065FC;
+    cursor: pointer;
 }
 
 .desktop-search {
@@ -231,6 +232,7 @@ a {
     margin-bottom: 10px;
     margin-right: 20px;
     height: 120px;
+    cursor: pointer;
 }
 
 .popular-accommodations img {
@@ -293,6 +295,7 @@ a {
     margin-bottom: 12px;
     margin-right: 20px;
     height: 160px;
+    cursor: pointer;
 }
 
 .accommodations-marseille img {
@@ -345,6 +348,7 @@ a {
     background-color: white;
     margin-bottom: 17px;
     height: 150px;
+    cursor: pointer;
 }
 
 .activities-marseille img {
@@ -412,6 +416,7 @@ a {
         border: 4px solid #0065FC;
         width: 30%;
         border-radius: 0px 18px 18px 0;
+        cursor: pointer;
     }
 
     /* POPULAR */
@@ -419,10 +424,13 @@ a {
     .accommodations-and-popular {
         display: flex;
         flex-direction: column;
-        margin: 0 20px;
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .most-popular {
+        width: auto;
         border-radius: 20px;
         height: auto;
         padding-left: 10px;
@@ -430,7 +438,6 @@ a {
     }
 
     .popular-accommodations {
-        width: auto;
         display: flex;
     }
     
@@ -460,6 +467,7 @@ a {
 
     .popular-accommodations h2 {
         font-size: 11px;
+        padding-top: 0px;
     }
 
     .popular-accommodations span {
@@ -473,9 +481,9 @@ a {
         width: auto;
         background-color: #F2F2F2;
         border-radius: 20px;
-        margin-left: 0px;
         padding-bottom: 30px;
         margin-top: 20px;
+        margin-left: 0px;
     }
 
     .accommodations h1 {
@@ -509,10 +517,15 @@ a {
     }
 
     .display-more {
-        padding: 25px;
+        padding: 50px 25px 15px;
     }
 
     /* ACTIVITIES */
+
+    .activities {
+        width: auto;
+        justify-content: space-between;
+    }
 
     .activities-marseille {
         display: flex;
@@ -520,8 +533,9 @@ a {
     }
 
     .activities article {
-        width: 47%;
-        margin: 5px;
+        width: 47.5%;
+        margin-left: 10px;
+        max-width: 700px;
     }
 
     /* FOOTER */
@@ -529,12 +543,11 @@ a {
     .footer {
         display: flex;
         flex-direction: row;
-        margin-left: -40px;
-        margin-right: -40px;
     }
 
     .footer div {
-        margin-left: 50px;
+        padding-right: 40px;
+        margin-left: 20px;
         width: 32%;
     }
 }
@@ -542,8 +555,8 @@ a {
 @media screen and (min-width: 992px) {
 
     body {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .navbar {
@@ -568,7 +581,6 @@ a {
     }
 
     .searchbar {
-        margin: 15px;
         margin-bottom: 0px;
     }
 
@@ -610,28 +622,85 @@ a {
     .accommodations-and-popular {
         display: flex;
         flex-direction: row;
+        width: auto;
     }
 
     .most-popular {
         border-radius: 20px;
-        max-height: 660px;
+        width: 35%;
+        height: 545px;
+        margin: 0px;
+    }
+
+    .most-popular h1 {
+        width: 95%;
     }
 
     .popular-accommodations {
-        width: 340px;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .most-popular-title .fa-external-link {
+        font-size: 18px;
+        width: 5%;
+        text-align: end;
     }
 
     .popular-accommodations article {
-        margin-bottom: 30px;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        height: 130px;
+    }
+
+    .popular-accommodations img {
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .popular-texts {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 0px;
+        justify-content: space-between;
+    }
+
+    .popular-accommodations h2 {
+        font-size: 13px;
+        font-weight: bold;
+        padding-top: 5px;
+    }
+    
+    .popular-accommodations span {
+        padding-top: 10px;
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    
+    .star-rating {
+        font-size: 10px;
+        padding-bottom: 10px;
     }
 
     .accommodations {
         order: -1;
-        width: 750px;
+        width: 65%;
+        height: 545px;
         background-color: #F2F2F2;
-        margin-right: 30px;
+        margin: 0px;
+        margin-right: 15px;
         border-radius: 20px;
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+
+    .accommodations-title {
+        margin: 8px;
     }
 
     .accommodations-marseille {
@@ -642,31 +711,29 @@ a {
 
     .accommodations-marseille article {
         display: flex;
-        width: 210px;
+        width: 30%;
+        min-width: 150px;
         box-shadow: 0px 0px 5px #cfcaca;
         border-radius: 20px;
         background-color: white;
         margin-bottom: 20px;
-        margin-right: 20px;
-        height: 230px;
+        margin-right: 10px;
+        height: 180px;
     }
     
     .accommodations-marseille img {
         object-fit: cover;
         height: 70%;
         border-bottom: none;
-        border: 6px solid white;
+        border: 4px solid white;
         border-radius: 20px 20px 0px 0px;
-    }
-
-    .accommodations h2 {
-        padding: 15px 0px 15px 0px;
     }
 
     .activities {
         margin-top: 0px;
         padding-left: 0px;
-        margin-right: -20px;
+        width: auto;
+        margin-bottom: 40px;
     }
 
     .activities-marseille {
@@ -674,11 +741,12 @@ a {
         flex-wrap: wrap;
         flex-direction: column;
         height: 400px;
+        margin-right: 0px;
     }
 
     .activities-marseille article {
         display: flex;
-        width: 23%;
+        width: 23.1%;
         height: auto;
         max-height: 400px;
     }
@@ -710,12 +778,12 @@ a {
     .footer {
         display: flex;
         flex-direction: row;
-        margin-left: -40px;
-        margin-right: -40px;
+        margin-left: -20px;
+        margin-right: -20px;
     }
 
     .footer div {
-        margin-left: 50px;
         width: 32%;
+        margin-left: 30px;
     }
 }
